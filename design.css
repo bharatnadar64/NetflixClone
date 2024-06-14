@@ -1,0 +1,341 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+    sans-serif;
+}
+body {
+  background-color: black;
+}
+
+.upper {
+  background-image: url("assets/Images/Background.jpg");
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-size: max(1600px, 100vw);
+
+  position: relative;
+}
+
+.upper .box {
+  height: 100vh;
+  width: 100%;
+  opacity: 0.65;
+  background-color: black;
+  position: absolute;
+  top: 0;
+}
+
+nav {
+  width: 75vw;
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+  height: 90px;
+}
+nav img {
+  color: rgb(187, 16, 16);
+  height: 40px;
+  position: relative;
+  z-index: 1;
+}
+
+.buttons {
+  display: flex;
+  position: relative;
+  z-index: 1;
+  text-wrap: nowrap;
+}
+
+.words {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 60%;
+  color: white;
+  z-index: 1;
+  gap: 15px;
+  padding: 30px;
+}
+.words span:nth-child(1) {
+  text-align: center;
+  font-size: 46px;
+  font-weight: 900;
+}
+
+.words span:nth-child(2) {
+  text-align: center;
+  font-size: 25px;
+}
+.signup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+}
+.words span:nth-child(3) {
+  text-align: center;
+  font-size: 20px;
+}
+.gmail {
+  border: 1px solid white;
+  border-radius: 3px;
+  background-color: rgb(39 38 38 / 66%);
+  font-size: 17px;
+  padding: 11px 0;
+  padding-right: 117px;
+  padding-left: 10px;
+  color: white;
+  font-weight: 700;
+}
+button {
+  color: white;
+  background-color: rgb(241, 25, 25);
+  border: 0;
+  text-align: center;
+  cursor: pointer;
+}
+.start {
+  font-weight: 500;
+  padding: 7px 19px;
+  border-radius: 3px;
+  font-size: 22px;
+}
+.lines {
+  height: 8px;
+  background-color: rgb(68, 68, 68);
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.fline {
+  margin-top: 0;
+}
+
+#selector {
+  padding: 2px 18px;
+  font-size: 18px;
+  font-weight: 450;
+  text-align: center;
+  color: white;
+  background-color: rgb(39 38 38 / 66%);
+  border: 0.5px solid white;
+  border-radius: 3px;
+  margin-right: 15px;
+}
+
+.signup-btn {
+  font-weight: 600;
+  font-size: 15px;
+  padding: 6px 14px;
+  border-radius: 5px;
+}
+
+.first-slide {
+  display: flex;
+  max-width: 60vw;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.first-slide .text {
+  color: white;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+}
+.text span:first-child {
+  font-size: 48px;
+  font-weight: 900;
+}
+.text span:nth-child(2) {
+  font-size: 22px;
+  font-weight: 400;
+}
+.first-slide .image {
+  position: relative;
+}
+.first-slide .image img {
+  position: relative;
+  width: 400px;
+  z-index: 1;
+}
+.first-slide .image video {
+  position: absolute;
+  width: 300px;
+  top: 18%;
+  right: 12%;
+}
+
+.three .image video {
+  position: absolute;
+  width: 248px;
+  top: 9%;
+  right: 20%;
+}
+
+.lower {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.lower h1 {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 900;
+}
+.qbox {
+  background-color: rgb(49, 48, 48);
+  display: flex;
+  padding: 20px 20px;
+  width: 73vw;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 25px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.qbox:hover{
+  animation: change-color 500ms ease-in-out 10ms forwards;
+}
+
+@keyframes change-color{
+  from{
+background-color: rgb(49, 48, 48);
+  }
+  to{
+background-color: rgb(83, 83, 83);
+  }
+}
+.downtext {
+  text-align: center;
+  font-size: 20px;
+}
+
+footer {
+  margin: auto;
+  color: rgb(165, 164, 164);
+  width: 75vw;
+  margin-bottom: 50px;
+}
+.footer a {
+  color: rgb(165, 164, 164);
+  font-size: 15px;
+}
+.footer {
+  display: grid;
+  grid-template-areas: "one two three four";
+  gap: 10px 20px;
+  margin: 25px auto;
+}
+
+.stwo {
+  margin-bottom: 25px;
+}
+
+@media screen and (max-width: 960px) {
+  .first-slide {
+    flex-wrap: wrap;
+  }
+  .first-slide span:first-child {
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+  }
+  .first-slide span:nth-child(2) {
+    text-align: center;
+  }
+  .first-slide .image {
+    position: relative;
+    margin: auto;
+  }
+  .two-head {
+    font-size: 35px;
+  }
+  .signup {
+    flex-wrap: wrap;
+    row-gap: 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .first-slide .image img {
+    width: 250px;
+  }
+  .first-slide .image video {
+    width: 190px;
+  }
+  .three .image video {
+    width: 153px;
+  }
+  .gmail {
+    padding-right: 50px;
+  }
+  nav {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 500px) {
+  .words span:nth-child(1) {
+    font-size: 35px;
+  }
+  .words span:nth-child(2) {
+    font-size: 25px;
+  }
+  .words span:nth-child(3) {
+    font-size: 15px;
+  }
+  nav {
+    padding-top: 20px;
+  }
+  .first-slide span:first-child {
+    font-size: 30px;
+  }
+  .first-slide span:nth-child(2){
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 370px) {
+  .footer {
+    grid-template-areas: "one two";
+  }
+  .qbox {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .first-slide .image img {
+    width: 150px;
+  }
+  .first-slide .image video {
+    width: 111px;
+  }
+  .first-slide .image video {
+    width: 91px;
+  }
+  .lower h1 {
+    font-size: 25px;
+  }
+  .first-slide span:first-child {
+    font-size: 25px;
+  }
+  .first-slide span:nth-child(2){
+    font-size: 15px;
+  }
+  .gmail {
+    padding-right: 5px;
+  }
+  .downtext {
+    font-size: 12px;
+  }
+}
