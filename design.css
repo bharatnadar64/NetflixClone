@@ -9,7 +9,7 @@ body {
 }
 
 .upper {
-  background-image: url("assets/Images/Background.jpg");
+  background-image: url("assets/Images/background.jpg");
   background-position: bottom center;
   background-repeat: no-repeat;
   height: 100vh;
